@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="@string/nav_drawer_item_home" />
+    <item
+        android:id="@+id/nav_vehiculos"
+        android:icon="@drawable/ic_drawer_reports"
+        android:title="@string/nav_drawer_vehicules" />
+    <item
+        android:id="@+id/nav_usuarios"
+        android:icon="@drawable/ic_drawer_user"
+        android:title="@string/nav_drawer_item_users" />
+  </group>
+
+  <item
+      android:orderInCategory="999"
+      android:title="@string/nav_drawer_item_admin">
+    <menu>
+      <item
+          android:id="@+id/nav_usuario"
+          android:icon="@drawable/ic_drawer_user"
+          android:title="@string/nav_drawer_item_user" />
+      <item
+          android:id="@+id/nav_configurar"
+          android:icon="@drawable/ic_configuration"
+          android:title="@string/nav_drawer_item_configuration" />
+      <item
+          android:id="@+id/nav_cerrar_sesion"
+          android:icon="@drawable/ic_drawer_sign_out"
+          android:title="@string/nav_drawer_item_sign_out" />
+    </menu>
+  </item>
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/conte">
+<!--App Bar>
+    <include layout="@layout/tabs_bar"/-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.Normal.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.Normal.PopupOverlay" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/tv_vacio"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/actualizando_preuso" />
+    <ProgressBar
+        android:id="@+id/pb_progreso"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_superior_progreso"
+        android:indeterminate="true"
+        android:visibility="gone" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragmentos_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bottom_bar"
+        android:layout_below="@+id/appbar" />
+<!-- Bottom bar -->
+    <FrameLayout
+        android:id="@+id/fl_bottom_bar"
+        android:layout_width="@dimen/match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Color1"
+        android:elevation="@dimen/equipo_elevacion_button_bar">
+        <LinearLayout
+            android:layout_width="@dimen/ancho_contenido"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="end">
+            <Button
+                android:id="@+id/b_cancel"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CANCELAR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/skp_darkblue" />
+            <Button
+                android:id="@+id/b_accept"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ACEPTAR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/skp_blue" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

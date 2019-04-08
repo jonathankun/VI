@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_drawer_home"
+        android:orderInCategory="1"
+        android:title="@string/nav_drawer_item_home" />
+    <!--item
+            android:id="@+id/nav_informes"
+            android:orderInCategory="2"
+            android:icon="@drawable/ic_drawer_reports"
+            android:title="@string/nav_drawer_item_reports" /-->
+  </group>
+
+  <item
+    android:orderInCategory="998"
+    android:title="@string/nav_drawer_item_db">
+    <menu>
+      
+      <item
+          android:id="@+id/nav_sync_db"
+          android:icon="@drawable/ic_drawer_sync"
+          android:title="@string/nav_drawer_item_sync_db" />
+    </menu>
+  </item>
+  
+  <item
+      android:orderInCategory="999"
+      android:title="@string/nav_drawer_item_admin">
+    <menu>
+      <item
+          android:id="@+id/nav_usuario"
+          android:icon="@drawable/ic_drawer_user"
+          android:title="@string/nav_drawer_item_user" />
+      <item
+          android:id="@+id/nav_configurar"
+          android:icon="@drawable/ic_configuration"
+          android:title="@string/nav_drawer_item_configuration" />
+      <item
+          android:id="@+id/nav_cerrar_sesion"
+          android:icon="@drawable/ic_drawer_sign_out"
+          android:title="@string/nav_drawer_item_sign_out" />
+    </menu>
+  </item>
+</menu>

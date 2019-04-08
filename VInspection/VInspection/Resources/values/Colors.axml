@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+  <color name="colorPrimary">#80daf3</color>
+  
+  <color name="colorPrimaryDark">#005088</color>
+  <color name="colorAccent">#00b0dc</color>
+
+  <color name="texto_boton_flat">#ff008094</color>
+
+  <!-- Actividad Inicio -->
+  <color name="fondo_actividad_inicio">#EEEEEE</color>
+
+  <!-- [[COLORES STATKRAFT]] -->
+  <color name="skp_blue">#00b0dc</color>
+  <color name="skp_50blue">#80daf3</color>
+  <color name="skp_15blue">#daf4fc</color>
+  <color name="skp_darkgrey">#7a6f69</color>
+  <color name="skp_mediumgrey">#bbb3b0</color>
+  <color name="skp_ligthgrey">#f0efee</color>
+  <color name="skp_darkblue">#005088</color>
+  <color name="skp_orangered">#e84e0f</color>
+  <color name="skp_energyyellow">#e5d100</color>
+
+  <color name="skp_textblack">#000000</color>
+  <color name="skp_textgrey">#575756</color>
+  <color name="skp_textwhite">#ffffff</color>
+  <color name="skp_textblue">#008db6</color>
+
+  <!-- [[COLORES DE ESTADO DE REVISIONES VEHICULARES]] -->
+  <color name="color_estado_1">#26ff00</color>
+  <color name="color_estado_2">#ffea00</color>
+  <color name="color_estado_3">#ff0000</color>
+
+  <color name="Color1">#ffffff</color>
+  <color name="Color2">#3044b7</color>
+  <color name="Color3">#a7a7a7</color>
+  <color name="Color4">#000000</color>
+  <color name="Color5">#fff89d</color>
+  <color name="Color6">#fff89d</color>
+  <color name="Color7">#d20000</color>
+
+  <color name="cardview_dark_background">#a7a7a7</color>
+</resources>

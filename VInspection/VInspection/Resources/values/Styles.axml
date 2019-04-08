@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="AppTheme.Normal">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="TextAppearance.Title" parent="TextAppearance.AppCompat.Title">
+    <item name="android:fontFamily">sans-serif-medium</item>
+  </style>
+
+  <style name="TituloSesion">
+    <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    <item name="android:textColor">@color/texto_boton_flat</item>
+    <item name="android:textSize">@dimen/tamano_texto_sesion</item>
+  </style>
+
+  <style name="TituloGrupo" parent="TituloSesion">
+    <item name="android:textColor">?attr/colorPrimaryDark</item>
+  </style>
+
+  <!-- Actividad Inicio -->
+  <style name="Normal.Inicio" parent="AppTheme.Normal">
+    <item name="android:windowBackground">@color/fondo_actividad_inicio</item>
+  </style>
+
+  <style name="AppTheme.Normal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.Normal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+  <style name="TextAppearance.Body1" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textSize">
+      14sp
+    </item>
+    <!-- bug in AppCompat, can remove this when it's fixed -->
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <!-- Espacio de línea -->
+  <item name="body_1_spacing" format="float" type="dimen">1.22448979592</item>
+
+  <style name="Body1Text">
+    <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+    <item name="android:lineSpacingMultiplier">@dimen/body_1_spacing</item>
+  </style>
+
+</resources>

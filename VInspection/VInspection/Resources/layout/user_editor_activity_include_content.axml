@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin" >
+  <TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/card_tabla">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/card_header_height"
+          android:text="@string/UT_Title"
+          android:textColor="@color/cardview_dark_background"
+          android:textSize="@dimen/tamamo_cabecera"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_span="3" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+      <TextView
+          android:text="@string/UT_Item01"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:layout_gravity="center_vertical" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/Color3" />
+      <AutoCompleteTextView
+          android:id="@+id/ET_UT_Item01"
+          android:layout_width="@dimen/card_item_width"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:layout_gravity="center_vertical"
+          android:inputType="textPersonName" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+      <TextView
+          android:text="@string/UT_Item02"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:layout_gravity="center_vertical" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/Color3" />
+      <EditText
+          android:id="@+id/ET_UT_Item02"
+          android:layout_width="@dimen/card_item_width"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:layout_gravity="center_vertical"
+          android:inputType="textPersonName" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+      <TextView
+          android:text="@string/UT_Item03"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:layout_gravity="center_vertical" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/Color3" />
+      <EditText
+          android:id="@+id/ET_UT_Item03"
+          android:layout_width="@dimen/card_item_width"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:layout_gravity="center_vertical"
+          android:inputType="textEmailAddress" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+      <TextView
+          android:text="@string/UT_Item04"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:layout_gravity="center_vertical" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/Color3" />
+      <EditText
+          android:id="@+id/ET_UT_Item04"
+          android:layout_width="@dimen/card_item_width"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:layout_gravity="center_vertical"
+          android:inputType="textPassword" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/UT_SpinnerFile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior"
+        android:visibility="gone">
+      <TextView
+          android:text="@string/UT_Item05"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/tamamo_fila"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:layout_gravity="center_vertical" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/Color3" />
+      <Spinner
+          android:id="@+id/UT_S_Item05"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:popupTheme="@style/AppTheme.Normal.PopupOverlay" />
+    </TableRow>
+
+  </TableLayout>
+</android.support.v4.widget.NestedScrollView>

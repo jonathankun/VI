@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:card_view="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/card_tabla">
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/card_header_height"
+        android:text="@string/T3_Title3"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/tamamo_cabecera"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <EditText
+        android:id="@+id/ET_T3_Item12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_span="3"
+        android:textSize="@dimen/tamamo_fila"/>
+  </TableRow>
+
+
+</TableLayout>

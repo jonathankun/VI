@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:card_view="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/card_tabla">
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/card_header_height"
+        android:text="@string/T3_Title1"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/tamamo_cabecera"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/card_header_height"
+        android:text="@string/T3_Title2"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/tamamo_cabecera"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_span="3"/>
+
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_span="3"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item03"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item04"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item05"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item06"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/textView" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item07"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item08"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item09"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_con_borde_inferior" >
+
+    <TextView
+        android:text="@string/T3_Item11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <TextView
+        android:text="@string/T3_Cant11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamamo_fila"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"  />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/Color3" />
+
+    <CheckBox
+        android:id="@+id/CB_T3_Item11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+  </TableRow>
+
+</TableLayout>

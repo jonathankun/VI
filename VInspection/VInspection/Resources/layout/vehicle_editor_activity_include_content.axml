@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_header_height"
+            android:text="Datos de Vehiculos"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/tamamo_cabecera"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_span="5" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Placa"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapCharacters" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Marca"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapCharacters" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Modelo"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapCharacters" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Responsable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <AutoCompleteTextView
+            android:id="@+id/ET_Responsable"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textAutoComplete" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Area"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapCharacters" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Encargado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Encargado"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Kilometraje Ultimo Mantto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_UMantto"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="number" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Fecha Ultimo Mantto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_FUMantto"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:editable="false"
+            android:inputType="date" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Kilometraje Actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Kilometraje"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="number" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <View
+            android:id="@+id/V_Estado"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color2"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_con_borde_inferior">
+        <TextView
+            android:text="Central"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/Color3" />
+        <EditText
+            android:id="@+id/ET_Central"
+            android:layout_width="@dimen/card_item_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamamo_fila"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapCharacters" />
+    </TableRow>
+</TableLayout>

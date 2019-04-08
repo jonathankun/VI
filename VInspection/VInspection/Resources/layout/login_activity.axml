@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!-- Appbar -->
+    <FrameLayout
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sesion_altura_appbar"
+        android:layout_alignParentTop="true"
+        android:background="?colorPrimary"
+        android:paddingBottom="?actionBarSize">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/welcome_image_width"
+            android:layout_height="@dimen/welcome_image_height"
+            android:layout_gravity="center" />
+    </FrameLayout>
+<!-- Contenido principal -->
+<!-- Progress State -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_superior_progreso"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_below="@+id/cabecera"
+        android:layout_centerInParent="true" />
+    <FrameLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bottom_bar"
+        android:layout_below="@+id/cabecera">
+    <!-- Content State -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:clickable="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="S.............t"
+                android:gravity="center"
+                android:textColor="@color/skp_textblue"
+                android:textSize="48sp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:text="USUARIO:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                    <EditText
+                        android:id="@+id/txtUserName"
+                        android:inputType="textPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+                    <TextView
+                        android:text="CONTRASEÑA:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:text="Iniciar Sesión"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

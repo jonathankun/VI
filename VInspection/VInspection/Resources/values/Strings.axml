@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">V Inspection</string>
+
+  <!-- Strings de la sesión -->
+  <string name="title_activity_actividad_equipo">Equipo</string>
+  <string name="sesion_seleccionar_cuenta">Selecciona una cuenta</string>
+  <string name="sesion_seleccionar_cuenta_texto">Por favor selecciona una cuenta para usar</string>
+  <string name="crear_cuenta">CREAR CUENTA</string>
+
+  <string name="login_no_accounts_message">No hay cuentas aún</string>
+  <string name="login_create_account_request">Crea una cuenta para comenzar</string>
+
+  <!-- Strings de botonBar -->
+  <string name="atras">ATRAS</string>
+  <string name="siguiente">SIGUIENTE</string>
+  <string name="guardar">GUARDAR</string>
+  <string name="aceptar">ACEPTAR</string>
+  <string name="cancelar">CANCELAR</string>
+  <string name="salir">SALIR</string>
+
+
+
+  <string name="error_dato_invalido">Ingresa un valor</string>
+  <string name="enviando_datos_servidor">Enviando datos al servidor…</string>
+  <string name="actualizando_preuso">Actualizando Pre-Uso…</string>
+  <string name="datos_guardados">¡Datos guardados!</string>
+  <string name="validacion_guardada">¡Actualización guardada!</string>
+
+
+
+  <!-- Nombres actividades -->
+  <string name="title_activity_login">Iniciar sesión</string>
+  <string name="title_home_activity">Inicio</string>
+  <string name="title_tables_activity">Pre-uso Vehicular</string>
+
+  <!-- Strings del nav drawer -->
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="nav_drawer_item_home">Inicio</string>
+  <string name="nav_drawer_supervisor">Supervisión</string>
+  <string name="nav_drawer_vehicules">Vehiculos</string>
+  <string name="nav_drawer_item_users">Usuarios</string>
+  <string name="nav_drawer_item_db">Base de Datos</string>
+  <string name="nav_drawer_item_export_db">Exportar en Memoria</string>
+  <string name="nav_drawer_item_sync_db">Sincronizar</string>
+  <string name="nav_drawer_item_user">Mi usuario</string>
+  <string name="nav_drawer_item_admin">Administración</string>
+  <string name="nav_drawer_item_configuration">Configuración</string>
+  <string name="nav_drawer_item_sign_out">Cerrar Sesión</string>
+
+  <!-- Strings de Tabla de Usuario -->
+  <string name="UT_Title">DATOS DE USUARIO</string>
+
+  <string name="UT_Item01">Nombre</string>
+  <string name="UT_Item02">Área</string>
+  <string name="UT_Item03">Cuenta</string>
+  <string name="UT_Item04">Contraseña</string>
+  <string name="UT_Item05">Perfil</string>
+  
+  <string-array name="profiles">
+    <item>Responsable</item>
+    <item>Supervisor</item>
+    <item>Vigilante</item>
+    <item>Conductor</item>
+  </string-array>
+
+  <!-- Strings de Tabla 0 -->
+  <string name="T0_Title1">DATOS DE VEHICULO Y DESTINO</string>
+
+  <string name="T0_Item01">N° de Placa</string>
+  <string name="T0_Item02">Tipo de Vehiculo</string>
+  <string name="T0_Item03">KM. Actual</string>
+  <string name="T0_Item04_1">Es necesario realizar el siguiente mantenimiento al vehiculo. Indica si el mantenimiento ya ha sido realizado indicandolo con el "CheckBox".</string>
+  <string name="T0_Item04_2">El kilometraje para mantenimiento se encuentra próximo.</string>
+  <string name="T0_Item05">C. Producción</string>
+  <string name="T0_Item06">Destino</string>
+
+  <string name="T0_Title2">DATOS DE CONDUCTOR</string>
+  <string name="T0_Item07">Nombre</string>
+
+  <!-- Strings de Tabla 1 -->
+  <string name="T1_Title">ITEMS A VERIFICAR</string>
+
+  <string name="T1_Item01">Sistema de Dirección</string>
+  <string name="T1_Item02">Sistema de Frenos</string>
+  <string name="T1_Item03">Faros (delanteros y posteriores)</string>
+  <string name="T1_Item04">Luces Direccionales</string>
+  <string name="T1_Item05">Asientos</string>
+  <string name="T1_Item06">Cinturones en cada asiento</string>
+  <string name="T1_Item07">Vidrios</string>
+  <string name="T1_Item08">Limpia Parabrisas</string>
+  <string name="T1_Item09">Espejos Retrovisores Internos</string>
+  <string name="T1_Item10">Espejos Retrovisores Externos</string>
+  <string name="T1_Item11">Nivel de Aceite</string>
+  <string name="T1_Item12">Nivel de Agua / Refrigerante</string>
+  <string name="T1_Item13">Combustible</string>
+  <string name="T1_Item14">Claxon</string>
+  <string name="T1_Item15">Alarma de retroceso</string>
+  <string name="T1_Item16">Relojes Indicadores / Panel de Control</string>
+  <string name="T1_Item17">Neumáticos</string>
+  <string name="T1_Item18">Neumático de repuesto</string>
+  <string name="T1_Item19">Extintor PQS tipo ABC</string>
+  <string name="T1_Item20">Conos de Seguridad (02)</string>
+  <string name="T1_Item21">Soga de arrastre</string>
+  <string name="T1_Item22">Botiquín</string>
+  <string name="T1_Item23">Herramienta y llave de ruedas</string>
+  <string name="T1_Item24">Gata y Palanca</string>
+  <string name="T1_Item25">Triángulos de seguridad (02)</string>
+  <string name="T1_Item26">Linterna</string>
+  <string name="T1_Item27">Cuñas</string>
+  <string name="T1_Item28">Carrocería</string>
+  <string name="T1_Item29">Pértigas</string>
+  <string name="T1_Item30">Circulina</string>
+
+  <!-- Strings de Tabla 2 -->
+  <string name="T2_Title1">COMENTARIOS ADICIONALES</string>
+
+  <string name="T2_Title2">DAÑOS OBSERVADOS</string>
+  <string name="T2_Title3">PRIORIDAD</string>
+
+  <string-array name="prioridades">
+    <item>BAJA</item>
+    <item>MEDIA</item>
+    <item>ALTA</item>
+  </string-array>
+
+  <!-- Strings de Tabla 3 -->
+  <string name="T3_Title1">ITEMS A VERIFICAR</string>
+  <string name="T3_Title2">CANTIDAD*</string>
+
+  <string name="T3_Cant02">1</string>
+  <string name="T3_Cant03">1</string>
+  <string name="T3_Cant04">1</string>
+  <string name="T3_Cant05">5</string>
+  <string name="T3_Cant06">20</string>
+  <string name="T3_Cant07">2</string>
+  <string name="T3_Cant08">10</string>
+  <string name="T3_Cant09">1</string>
+  <string name="T3_Cant10">1</string>
+  <string name="T3_Cant11">2</string>
+
+  <string name="T3_Title3">COMENTARIOS ADICIONALES</string>
+
+  <string name="T3_Item01">Estado de caja y soporte de botiquin</string>
+  <string name="T3_Item02">Alcohol 70° 500ml</string>
+  <string name="T3_Item03">Jabón antiséptico</string>
+  <string name="T3_Item04">Algodón 50 gr.</string>
+  <string name="T3_Item05">Apósito esterilizado 10x10 cm.</string>
+  <string name="T3_Item06">Bandas adhesivas</string>
+  <string name="T3_Item07">Esparadrapo 2.5 cm.x5 m.</string>
+  <string name="T3_Item08">Gasas estériles fraccionadas 10x10 cm.</string>
+  <string name="T3_Item09">Guantes quirúrgicos esterilizados 7 1/2</string>
+  <string name="T3_Item10">Tijeras de punta roma de 3 pulgadas</string>
+  <string name="T3_Item11">Venda elástica 4 X 5 Y</string>
+
+  <string name="T3_comentario">(*) La cantidad indicada es la requerida para movilizaciones fuera de la provincia</string>
+
+  <!-- Strings de Tabla 4 -->
+  <string name="T4_Title1">ESTADO DE DOCUMENTACIÓN</string>
+  <string name="T4_Item01">SOAT</string>
+  <string name="T4_Item02">Revisión Técnica</string>
+
+  <string name="T4_Item_seleccion">Seleccione Nueva Fecha</string>
+  <string name="T4_Item_date">0000/00/00</string>
+
+  <string name="T4_Title2">DOCUMENTOS A VERIFICAR</string>
+  <string name="T4_Item03">SOAT</string>
+  <string name="T4_Item04">Revisión Técnica</string>
+  <string name="T4_Item05">Tarjeta de Propiedad</string>
+  <string name="T4_Item06">Cartilla de Seguridad</string>
+  <string name="T4_Item07">Cartilla de ERP</string>
+
+</resources>
