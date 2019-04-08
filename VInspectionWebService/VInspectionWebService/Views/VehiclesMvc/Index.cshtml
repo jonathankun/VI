@@ -1,0 +1,99 @@
+﻿@model IEnumerable<VInspectionWebService.Models.Vehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Encargado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KUMantto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FUMantto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Central)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Buscador)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Encargado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KUMantto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FUMantto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kilometraje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Central)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Buscador)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdVehiculo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdVehiculo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdVehiculo })
+        </td>
+    </tr>
+}
+
+</table>

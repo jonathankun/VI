@@ -1,0 +1,28 @@
+// POST: api/CheckListsApi
+        [ResponseType(typeof(CheckList))]
+        public IHttpActionResult PostCheckList(CheckList checkList)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            db.CheckLists.Add(checkList);
+            db.SaveChanges();
+
+            Debug.Print("\n\n" + JsonConvert.SerializeObject(checkList) + "\n\n");
+
+            SummariesGeneratorApiController generador = new SummariesGeneratorApiController();
+
+            Debug.Print("Se inicia actualización de kilometraje del vehiculo");
+            generador.ActualizarKilometrajo_Vehiculo(checkList);
+            Debug.Print("Se inicia creación de nuevo resumen de Pre-Uso");
+            generador.Guardar_ResumenPreUsos(checkList);
+            if (generador.Evaluar_ActualizacionesDocumentos(checkList))
+            {
+                Debug.Print("Se inicia actualización de documentos");
+                generador.Guardar_ActualizacionesDocumentos(checkList);
+            }
+
+            return CreatedAtRoute("DefaultApi", new { id = checkList.IdPreUso }, checkList);
+        }

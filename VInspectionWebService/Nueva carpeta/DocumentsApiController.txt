@@ -1,0 +1,14 @@
+
+
+        [Route("api/DocumentsApi/GetDocumentsByPlate/{plate}")]
+        [ResponseType(typeof(Document))]
+        public IHttpActionResult GetDocumentsByPlate(string plate)
+        {
+            Document document = db.Documents.FirstOrDefault(x => x.Placa == plate);
+            if (document == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(document);
+        }

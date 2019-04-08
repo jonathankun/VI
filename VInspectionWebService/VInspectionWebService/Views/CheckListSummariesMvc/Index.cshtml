@@ -1,0 +1,201 @@
+﻿@model IEnumerable<VInspectionWebService.Models.CheckListSummary>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Vehiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Conductor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Produccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MensajeMantto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentarios1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentarios2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Botiquin1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Botiquin2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Botiquin3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seguridad1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seguridad2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seguridad3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seguridad4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaMantto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaItems)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaComentarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaBotiquin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaDocumentos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaPrincipal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BanderaMensajes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComentariosVigilancia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Buscador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Garitas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vehiculo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Conductor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kilometraje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MensajeMantto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Items1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Items2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comentarios1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comentarios2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Botiquin1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Botiquin2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Botiquin3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seguridad1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seguridad2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seguridad3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seguridad4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaMantto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaItems)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaComentarios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaBotiquin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaDocumentos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaPrincipal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BanderaMensajes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComentariosVigilancia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Buscador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Garitas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdResumen }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdResumen }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdResumen })
+        </td>
+    </tr>
+}
+
+</table>

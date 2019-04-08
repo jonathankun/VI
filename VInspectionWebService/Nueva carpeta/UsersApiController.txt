@@ -1,0 +1,38 @@
+
+
+
+        [Route("api/UsersApi/GetUserByAccount/{account}")]
+        [ResponseType(typeof(List<User>))]
+        public IHttpActionResult GetUserByAccount(string account)
+        {
+            var user = db.Users.FirstOrDefault(x => x.Cuenta == account);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
+        }
+
+
+        [Route("api/UsersApi/GetUsersName/")]
+        [ResponseType(typeof(List<User>))]
+        public IHttpActionResult GetUsersName()
+        {
+            var usersByName = db.Users.Select(x => new { x.IdUsuario, x.Nombre });
+
+            List<User> users = new List<User>();
+
+            foreach (var item in usersByName)
+            {
+                User user = new User { IdUsuario = item.IdUsuario, Nombre = item.Nombre };
+                users.Add(user);
+            }
+
+            if (users == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(users);
+        }

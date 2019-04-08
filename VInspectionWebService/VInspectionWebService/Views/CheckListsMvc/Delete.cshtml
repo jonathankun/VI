@@ -1,0 +1,624 @@
+﻿@model VInspectionWebService.Models.CheckList
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CheckList</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kilometraje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mantto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mantto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Conductor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Conductor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SistemaDireccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SistemaDireccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SistemaFrenos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SistemaFrenos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LucesDireccionales)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LucesDireccionales)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asientos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asientos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cinturones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cinturones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vidrios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vidrios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LimpiaParabrisas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LimpiaParabrisas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EspejoInterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EspejoInterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EspejoExterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EspejoExterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelAceite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelAceite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelAgua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelAgua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Combustible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Combustible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Claxon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Claxon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlarmaRetorceso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlarmaRetorceso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RelojesIndicadores)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RelojesIndicadores)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Neumaticos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Neumaticos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NeumaticoRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NeumaticoRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Extintor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Extintor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConosSeguridad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConosSeguridad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SogaArrastre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SogaArrastre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Botiquin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Botiquin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HerramientasLlaves)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HerramientasLlaves)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GataPalanca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GataPalanca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Triangulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Triangulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Linterna)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Linterna)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cunas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cunas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carroceria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carroceria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pertiga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pertiga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Circulina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Circulina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComentariosAdicionales)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComentariosAdicionales)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CajaSoporte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CajaSoporte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alcohol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alcohol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jabon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jabon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Algodon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Algodon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aposito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aposito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bandas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bandas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Esparadrapo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Esparadrapo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gasas1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gasas1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gasas2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gasas2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tijera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tijera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Venda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Venda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComentariosBotiquin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComentariosBotiquin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoSOAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoSOAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NuevaFechaSOAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NuevaFechaSOAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadRevTecnica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadRevTecnica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NuevaFechaRevTecnica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NuevaFechaRevTecnica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SOAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SOAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RevTecnica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevTecnica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TarjetaPropiedad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TarjetaPropiedad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CartillaSeguridad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CartillaSeguridad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CartillaERP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CartillaERP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaMantto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaMantto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaItems)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaItems)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaComentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaComentarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaBotiquin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaBotiquin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaDocumentos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaDocumentos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BanderaPrincipal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BanderaPrincipal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Buscador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Buscador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Garitas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Garitas)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

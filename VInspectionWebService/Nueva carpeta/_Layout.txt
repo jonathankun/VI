@@ -1,0 +1,6 @@
+
+					<li>@Html.ActionLink("Usuarios", "Index", "UsersMvc", new { area = "" }, null)</li>
+					<li>@Html.ActionLink("Vehiculos", "Index", "VehiclesMvc", new { area = "" }, null)</li>
+					<li>@Html.ActionLink("Documentos", "Index", "DocumentsMvc", new { area = "" }, null)</li>
+					<li>@Html.ActionLink("Pre-Usos", "Index", "CheckListsMvc", new { area = "" }, null)</li>
+					<li>@Html.ActionLink("Resumenes de Pre-Uso", "Index", "CheckListSummariesMvc", new { area = "" }, null)</li>

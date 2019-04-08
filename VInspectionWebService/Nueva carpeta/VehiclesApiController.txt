@@ -1,0 +1,14 @@
+
+
+        [Route("api/VehiclesApi/GetVehicleByPlate/{plate}")]
+        [ResponseType(typeof(Vehicle))]
+        public IHttpActionResult GetVehicleByPlate(string plate)
+        {
+            Vehicle vehicle = db.Vehicles.FirstOrDefault(x => x.Placa == plate);
+            if (vehicle == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(vehicle);
+        }

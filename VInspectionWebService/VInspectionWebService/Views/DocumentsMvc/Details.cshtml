@@ -1,0 +1,42 @@
+﻿@model VInspectionWebService.Models.Document
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Document</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaSOAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaSOAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRevTecnica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRevTecnica)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdDocumento }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

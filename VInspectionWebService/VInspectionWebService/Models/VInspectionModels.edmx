@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="VInspectionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CheckList">
+          <Key>
+            <PropertyRef Name="IdPreUso" />
+          </Key>
+          <Property Name="IdPreUso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Placa" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Kilometraje" Type="float" Nullable="false" />
+          <Property Name="Mantto" Type="varchar" MaxLength="2" />
+          <Property Name="Produccion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Destino" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Conductor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="SistemaDireccion" Type="varchar" MaxLength="2" />
+          <Property Name="SistemaFrenos" Type="varchar" MaxLength="2" />
+          <Property Name="Faros" Type="varchar" MaxLength="2" />
+          <Property Name="LucesDireccionales" Type="varchar" MaxLength="2" />
+          <Property Name="Asientos" Type="varchar" MaxLength="2" />
+          <Property Name="Cinturones" Type="varchar" MaxLength="2" />
+          <Property Name="Vidrios" Type="varchar" MaxLength="2" />
+          <Property Name="LimpiaParabrisas" Type="varchar" MaxLength="2" />
+          <Property Name="EspejoInterno" Type="varchar" MaxLength="2" />
+          <Property Name="EspejoExterno" Type="varchar" MaxLength="2" />
+          <Property Name="NivelAceite" Type="varchar" MaxLength="2" />
+          <Property Name="NivelAgua" Type="varchar" MaxLength="2" />
+          <Property Name="Combustible" Type="varchar" MaxLength="2" />
+          <Property Name="Claxon" Type="varchar" MaxLength="2" />
+          <Property Name="AlarmaRetorceso" Type="varchar" MaxLength="2" />
+          <Property Name="RelojesIndicadores" Type="varchar" MaxLength="2" />
+          <Property Name="Neumaticos" Type="varchar" MaxLength="2" />
+          <Property Name="NeumaticoRepuesto" Type="varchar" MaxLength="2" />
+          <Property Name="Extintor" Type="varchar" MaxLength="2" />
+          <Property Name="ConosSeguridad" Type="varchar" MaxLength="2" />
+          <Property Name="SogaArrastre" Type="varchar" MaxLength="2" />
+          <Property Name="Botiquin" Type="varchar" MaxLength="2" />
+          <Property Name="HerramientasLlaves" Type="varchar" MaxLength="2" />
+          <Property Name="GataPalanca" Type="varchar" MaxLength="2" />
+          <Property Name="Triangulo" Type="varchar" MaxLength="2" />
+          <Property Name="Linterna" Type="varchar" MaxLength="2" />
+          <Property Name="Cunas" Type="varchar" MaxLength="2" />
+          <Property Name="Carroceria" Type="varchar" MaxLength="2" />
+          <Property Name="Pertiga" Type="varchar" MaxLength="2" />
+          <Property Name="Circulina" Type="varchar" MaxLength="2" />
+          <Property Name="ComentariosAdicionales" Type="varchar" MaxLength="100" />
+          <Property Name="Observacion1" Type="varchar" MaxLength="50" />
+          <Property Name="Prioridad1" Type="int" />
+          <Property Name="Observacion2" Type="varchar" MaxLength="50" />
+          <Property Name="Prioridad2" Type="int" />
+          <Property Name="Observacion3" Type="varchar" MaxLength="50" />
+          <Property Name="Prioridad3" Type="int" />
+          <Property Name="Observacion4" Type="varchar" MaxLength="50" />
+          <Property Name="Prioridad4" Type="int" />
+          <Property Name="CajaSoporte" Type="varchar" MaxLength="2" />
+          <Property Name="Alcohol" Type="varchar" MaxLength="2" />
+          <Property Name="Jabon" Type="varchar" MaxLength="2" />
+          <Property Name="Algodon" Type="varchar" MaxLength="2" />
+          <Property Name="Aposito" Type="varchar" MaxLength="2" />
+          <Property Name="Bandas" Type="varchar" MaxLength="2" />
+          <Property Name="Esparadrapo" Type="varchar" MaxLength="2" />
+          <Property Name="Gasas1" Type="varchar" MaxLength="2" />
+          <Property Name="Gasas2" Type="varchar" MaxLength="2" />
+          <Property Name="Tijera" Type="varchar" MaxLength="2" />
+          <Property Name="Venda" Type="varchar" MaxLength="2" />
+          <Property Name="ComentariosBotiquin" Type="varchar" MaxLength="100" />
+          <Property Name="EstadoSOAT" Type="varchar" MaxLength="2" />
+          <Property Name="NuevaFechaSOAT" Type="date" />
+          <Property Name="EstadRevTecnica" Type="varchar" MaxLength="2" />
+          <Property Name="NuevaFechaRevTecnica" Type="date" />
+          <Property Name="SOAT" Type="varchar" MaxLength="2" />
+          <Property Name="RevTecnica" Type="varchar" MaxLength="2" />
+          <Property Name="TarjetaPropiedad" Type="varchar" MaxLength="2" />
+          <Property Name="CartillaSeguridad" Type="varchar" MaxLength="2" />
+          <Property Name="CartillaERP" Type="varchar" MaxLength="2" />
+          <Property Name="BanderaMantto" Type="int" Nullable="false" />
+          <Property Name="BanderaItems" Type="int" Nullable="false" />
+          <Property Name="BanderaComentarios" Type="int" Nullable="false" />
+          <Property Name="BanderaBotiquin" Type="int" Nullable="false" />
+          <Property Name="BanderaDocumentos" Type="int" Nullable="false" />
+          <Property Name="BanderaPrincipal" Type="int" Nullable="false" />
+          <Property Name="Buscador" Type="varchar" MaxLength="150" />
+          <Property Name="Garitas" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CheckListSummary">
+          <Key>
+            <PropertyRef Name="IdResumen" />
+          </Key>
+          <Property Name="IdResumen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Vehiculo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Conductor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Kilometraje" Type="float" Nullable="false" />
+          <Property Name="Produccion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Destino" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MensajeMantto" Type="varchar" MaxLength="200" />
+          <Property Name="Items1" Type="varchar" MaxLength="700" />
+          <Property Name="Items2" Type="varchar" MaxLength="700" />
+          <Property Name="Comentarios1" Type="varchar" MaxLength="500" />
+          <Property Name="Comentarios2" Type="varchar" MaxLength="500" />
+          <Property Name="Botiquin1" Type="varchar" MaxLength="400" />
+          <Property Name="Botiquin2" Type="varchar" MaxLength="400" />
+          <Property Name="Botiquin3" Type="varchar" MaxLength="500" />
+          <Property Name="Seguridad1" Type="varchar" MaxLength="200" />
+          <Property Name="Seguridad2" Type="varchar" MaxLength="200" />
+          <Property Name="Seguridad3" Type="varchar" MaxLength="200" />
+          <Property Name="Seguridad4" Type="varchar" MaxLength="200" />
+          <Property Name="BanderaMantto" Type="int" Nullable="false" />
+          <Property Name="BanderaItems" Type="int" Nullable="false" />
+          <Property Name="BanderaComentarios" Type="int" Nullable="false" />
+          <Property Name="BanderaBotiquin" Type="int" Nullable="false" />
+          <Property Name="BanderaDocumentos" Type="int" Nullable="false" />
+          <Property Name="BanderaPrincipal" Type="int" Nullable="false" />
+          <Property Name="BanderaMensajes" Type="int" Nullable="false" />
+          <Property Name="ComentariosVigilancia" Type="varchar" MaxLength="500" />
+          <Property Name="Buscador" Type="varchar" MaxLength="150" />
+          <Property Name="Garitas" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Documents">
+          <Key>
+            <PropertyRef Name="IdDocumento" />
+          </Key>
+          <Property Name="IdDocumento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Placa" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="FechaSOAT" Type="date" Nullable="false" />
+          <Property Name="FechaRevTecnica" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="30" />
+          <Property Name="Cuenta" Type="varchar" MaxLength="50" />
+          <Property Name="Contrasena" Type="varchar" MaxLength="20" />
+          <Property Name="Perfil" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Area" Type="varchar" MaxLength="20" />
+          <Property Name="Buscador" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="IdVehiculo" />
+          </Key>
+          <Property Name="IdVehiculo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Placa" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Marca" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Modelo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Responsable" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Area" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Encargado" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="KUMantto" Type="float" Nullable="false" />
+          <Property Name="FUMantto" Type="date" Nullable="false" />
+          <Property Name="Kilometraje" Type="float" Nullable="false" />
+          <Property Name="Central" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
+          <Property Name="Buscador" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="VInspectionModelStoreContainer">
+          <EntitySet Name="CheckList" EntityType="Self.CheckList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CheckListSummary" EntityType="Self.CheckListSummary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Documents" EntityType="Self.Documents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VInspectionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CheckList">
+          <Key>
+            <PropertyRef Name="IdPreUso" />
+          </Key>
+          <Property Name="IdPreUso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Placa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Kilometraje" Type="Double" Nullable="false" />
+          <Property Name="Mantto" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Produccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Destino" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Conductor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SistemaDireccion" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="SistemaFrenos" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Faros" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="LucesDireccionales" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Asientos" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Cinturones" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Vidrios" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="LimpiaParabrisas" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="EspejoInterno" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="EspejoExterno" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="NivelAceite" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="NivelAgua" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Combustible" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Claxon" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="AlarmaRetorceso" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="RelojesIndicadores" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Neumaticos" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="NeumaticoRepuesto" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Extintor" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ConosSeguridad" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="SogaArrastre" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Botiquin" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="HerramientasLlaves" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="GataPalanca" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Triangulo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Linterna" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Cunas" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Carroceria" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Pertiga" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Circulina" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ComentariosAdicionales" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Observacion1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Prioridad1" Type="Int32" />
+          <Property Name="Observacion2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Prioridad2" Type="Int32" />
+          <Property Name="Observacion3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Prioridad3" Type="Int32" />
+          <Property Name="Observacion4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Prioridad4" Type="Int32" />
+          <Property Name="CajaSoporte" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Alcohol" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Jabon" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Algodon" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Aposito" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Bandas" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Esparadrapo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Gasas1" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Gasas2" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Tijera" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Venda" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ComentariosBotiquin" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EstadoSOAT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="NuevaFechaSOAT" Type="DateTime" Precision="0" />
+          <Property Name="EstadRevTecnica" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="NuevaFechaRevTecnica" Type="DateTime" Precision="0" />
+          <Property Name="SOAT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="RevTecnica" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="TarjetaPropiedad" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="CartillaSeguridad" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="CartillaERP" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="BanderaMantto" Type="Int32" Nullable="false" />
+          <Property Name="BanderaItems" Type="Int32" Nullable="false" />
+          <Property Name="BanderaComentarios" Type="Int32" Nullable="false" />
+          <Property Name="BanderaBotiquin" Type="Int32" Nullable="false" />
+          <Property Name="BanderaDocumentos" Type="Int32" Nullable="false" />
+          <Property Name="BanderaPrincipal" Type="Int32" Nullable="false" />
+          <Property Name="Buscador" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Garitas" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CheckListSummary">
+          <Key>
+            <PropertyRef Name="IdResumen" />
+          </Key>
+          <Property Name="IdResumen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Vehiculo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Conductor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Kilometraje" Type="Double" Nullable="false" />
+          <Property Name="Produccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Destino" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MensajeMantto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Items1" Type="String" MaxLength="700" FixedLength="false" Unicode="false" />
+          <Property Name="Items2" Type="String" MaxLength="700" FixedLength="false" Unicode="false" />
+          <Property Name="Comentarios1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Comentarios2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Botiquin1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Botiquin2" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Botiquin3" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Seguridad1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Seguridad2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Seguridad3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Seguridad4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BanderaMantto" Type="Int32" Nullable="false" />
+          <Property Name="BanderaItems" Type="Int32" Nullable="false" />
+          <Property Name="BanderaComentarios" Type="Int32" Nullable="false" />
+          <Property Name="BanderaBotiquin" Type="Int32" Nullable="false" />
+          <Property Name="BanderaDocumentos" Type="Int32" Nullable="false" />
+          <Property Name="BanderaPrincipal" Type="Int32" Nullable="false" />
+          <Property Name="BanderaMensajes" Type="Int32" Nullable="false" />
+          <Property Name="ComentariosVigilancia" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Buscador" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Garitas" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Document">
+          <Key>
+            <PropertyRef Name="IdDocumento" />
+          </Key>
+          <Property Name="IdDocumento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Placa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaSOAT" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="FechaRevTecnica" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Cuenta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Contrasena" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Perfil" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Area" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Buscador" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="IdVehiculo" />
+          </Key>
+          <Property Name="IdVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Placa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Marca" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Modelo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Responsable" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Area" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Encargado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="KUMantto" Type="Double" Nullable="false" />
+          <Property Name="FUMantto" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Kilometraje" Type="Double" Nullable="false" />
+          <Property Name="Central" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado" Type="Int32" Nullable="false" />
+          <Property Name="Buscador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="VInspectionEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CheckLists" EntityType="Self.CheckList" />
+          <EntitySet Name="CheckListSummaries" EntityType="Self.CheckListSummary" />
+          <EntitySet Name="Documents" EntityType="Self.Document" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="Vehicles" EntityType="Self.Vehicle" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VInspectionModelStoreContainer" CdmEntityContainer="VInspectionEntities">
+          <EntitySetMapping Name="CheckLists">
+            <EntityTypeMapping TypeName="VInspectionModel.CheckList">
+              <MappingFragment StoreEntitySet="CheckList">
+                <ScalarProperty Name="IdPreUso" ColumnName="IdPreUso" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Placa" ColumnName="Placa" />
+                <ScalarProperty Name="Kilometraje" ColumnName="Kilometraje" />
+                <ScalarProperty Name="Mantto" ColumnName="Mantto" />
+                <ScalarProperty Name="Produccion" ColumnName="Produccion" />
+                <ScalarProperty Name="Destino" ColumnName="Destino" />
+                <ScalarProperty Name="Conductor" ColumnName="Conductor" />
+                <ScalarProperty Name="SistemaDireccion" ColumnName="SistemaDireccion" />
+                <ScalarProperty Name="SistemaFrenos" ColumnName="SistemaFrenos" />
+                <ScalarProperty Name="Faros" ColumnName="Faros" />
+                <ScalarProperty Name="LucesDireccionales" ColumnName="LucesDireccionales" />
+                <ScalarProperty Name="Asientos" ColumnName="Asientos" />
+                <ScalarProperty Name="Cinturones" ColumnName="Cinturones" />
+                <ScalarProperty Name="Vidrios" ColumnName="Vidrios" />
+                <ScalarProperty Name="LimpiaParabrisas" ColumnName="LimpiaParabrisas" />
+                <ScalarProperty Name="EspejoInterno" ColumnName="EspejoInterno" />
+                <ScalarProperty Name="EspejoExterno" ColumnName="EspejoExterno" />
+                <ScalarProperty Name="NivelAceite" ColumnName="NivelAceite" />
+                <ScalarProperty Name="NivelAgua" ColumnName="NivelAgua" />
+                <ScalarProperty Name="Combustible" ColumnName="Combustible" />
+                <ScalarProperty Name="Claxon" ColumnName="Claxon" />
+                <ScalarProperty Name="AlarmaRetorceso" ColumnName="AlarmaRetorceso" />
+                <ScalarProperty Name="RelojesIndicadores" ColumnName="RelojesIndicadores" />
+                <ScalarProperty Name="Neumaticos" ColumnName="Neumaticos" />
+                <ScalarProperty Name="NeumaticoRepuesto" ColumnName="NeumaticoRepuesto" />
+                <ScalarProperty Name="Extintor" ColumnName="Extintor" />
+                <ScalarProperty Name="ConosSeguridad" ColumnName="ConosSeguridad" />
+                <ScalarProperty Name="SogaArrastre" ColumnName="SogaArrastre" />
+                <ScalarProperty Name="Botiquin" ColumnName="Botiquin" />
+                <ScalarProperty Name="HerramientasLlaves" ColumnName="HerramientasLlaves" />
+                <ScalarProperty Name="GataPalanca" ColumnName="GataPalanca" />
+                <ScalarProperty Name="Triangulo" ColumnName="Triangulo" />
+                <ScalarProperty Name="Linterna" ColumnName="Linterna" />
+                <ScalarProperty Name="Cunas" ColumnName="Cunas" />
+                <ScalarProperty Name="Carroceria" ColumnName="Carroceria" />
+                <ScalarProperty Name="Pertiga" ColumnName="Pertiga" />
+                <ScalarProperty Name="Circulina" ColumnName="Circulina" />
+                <ScalarProperty Name="ComentariosAdicionales" ColumnName="ComentariosAdicionales" />
+                <ScalarProperty Name="Observacion1" ColumnName="Observacion1" />
+                <ScalarProperty Name="Prioridad1" ColumnName="Prioridad1" />
+                <ScalarProperty Name="Observacion2" ColumnName="Observacion2" />
+                <ScalarProperty Name="Prioridad2" ColumnName="Prioridad2" />
+                <ScalarProperty Name="Observacion3" ColumnName="Observacion3" />
+                <ScalarProperty Name="Prioridad3" ColumnName="Prioridad3" />
+                <ScalarProperty Name="Observacion4" ColumnName="Observacion4" />
+                <ScalarProperty Name="Prioridad4" ColumnName="Prioridad4" />
+                <ScalarProperty Name="CajaSoporte" ColumnName="CajaSoporte" />
+                <ScalarProperty Name="Alcohol" ColumnName="Alcohol" />
+                <ScalarProperty Name="Jabon" ColumnName="Jabon" />
+                <ScalarProperty Name="Algodon" ColumnName="Algodon" />
+                <ScalarProperty Name="Aposito" ColumnName="Aposito" />
+                <ScalarProperty Name="Bandas" ColumnName="Bandas" />
+                <ScalarProperty Name="Esparadrapo" ColumnName="Esparadrapo" />
+                <ScalarProperty Name="Gasas1" ColumnName="Gasas1" />
+                <ScalarProperty Name="Gasas2" ColumnName="Gasas2" />
+                <ScalarProperty Name="Tijera" ColumnName="Tijera" />
+                <ScalarProperty Name="Venda" ColumnName="Venda" />
+                <ScalarProperty Name="ComentariosBotiquin" ColumnName="ComentariosBotiquin" />
+                <ScalarProperty Name="EstadoSOAT" ColumnName="EstadoSOAT" />
+                <ScalarProperty Name="NuevaFechaSOAT" ColumnName="NuevaFechaSOAT" />
+                <ScalarProperty Name="EstadRevTecnica" ColumnName="EstadRevTecnica" />
+                <ScalarProperty Name="NuevaFechaRevTecnica" ColumnName="NuevaFechaRevTecnica" />
+                <ScalarProperty Name="SOAT" ColumnName="SOAT" />
+                <ScalarProperty Name="RevTecnica" ColumnName="RevTecnica" />
+                <ScalarProperty Name="TarjetaPropiedad" ColumnName="TarjetaPropiedad" />
+                <ScalarProperty Name="CartillaSeguridad" ColumnName="CartillaSeguridad" />
+                <ScalarProperty Name="CartillaERP" ColumnName="CartillaERP" />
+                <ScalarProperty Name="BanderaMantto" ColumnName="BanderaMantto" />
+                <ScalarProperty Name="BanderaItems" ColumnName="BanderaItems" />
+                <ScalarProperty Name="BanderaComentarios" ColumnName="BanderaComentarios" />
+                <ScalarProperty Name="BanderaBotiquin" ColumnName="BanderaBotiquin" />
+                <ScalarProperty Name="BanderaDocumentos" ColumnName="BanderaDocumentos" />
+                <ScalarProperty Name="BanderaPrincipal" ColumnName="BanderaPrincipal" />
+                <ScalarProperty Name="Buscador" ColumnName="Buscador" />
+                <ScalarProperty Name="Garitas" ColumnName="Garitas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CheckListSummaries">
+            <EntityTypeMapping TypeName="VInspectionModel.CheckListSummary">
+              <MappingFragment StoreEntitySet="CheckListSummary">
+                <ScalarProperty Name="IdResumen" ColumnName="IdResumen" />
+                <ScalarProperty Name="Vehiculo" ColumnName="Vehiculo" />
+                <ScalarProperty Name="Conductor" ColumnName="Conductor" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Kilometraje" ColumnName="Kilometraje" />
+                <ScalarProperty Name="Produccion" ColumnName="Produccion" />
+                <ScalarProperty Name="Destino" ColumnName="Destino" />
+                <ScalarProperty Name="MensajeMantto" ColumnName="MensajeMantto" />
+                <ScalarProperty Name="Items1" ColumnName="Items1" />
+                <ScalarProperty Name="Items2" ColumnName="Items2" />
+                <ScalarProperty Name="Comentarios1" ColumnName="Comentarios1" />
+                <ScalarProperty Name="Comentarios2" ColumnName="Comentarios2" />
+                <ScalarProperty Name="Botiquin1" ColumnName="Botiquin1" />
+                <ScalarProperty Name="Botiquin2" ColumnName="Botiquin2" />
+                <ScalarProperty Name="Botiquin3" ColumnName="Botiquin3" />
+                <ScalarProperty Name="Seguridad1" ColumnName="Seguridad1" />
+                <ScalarProperty Name="Seguridad2" ColumnName="Seguridad2" />
+                <ScalarProperty Name="Seguridad3" ColumnName="Seguridad3" />
+                <ScalarProperty Name="Seguridad4" ColumnName="Seguridad4" />
+                <ScalarProperty Name="BanderaMantto" ColumnName="BanderaMantto" />
+                <ScalarProperty Name="BanderaItems" ColumnName="BanderaItems" />
+                <ScalarProperty Name="BanderaComentarios" ColumnName="BanderaComentarios" />
+                <ScalarProperty Name="BanderaBotiquin" ColumnName="BanderaBotiquin" />
+                <ScalarProperty Name="BanderaDocumentos" ColumnName="BanderaDocumentos" />
+                <ScalarProperty Name="BanderaPrincipal" ColumnName="BanderaPrincipal" />
+                <ScalarProperty Name="BanderaMensajes" ColumnName="BanderaMensajes" />
+                <ScalarProperty Name="ComentariosVigilancia" ColumnName="ComentariosVigilancia" />
+                <ScalarProperty Name="Buscador" ColumnName="Buscador" />
+                <ScalarProperty Name="Garitas" ColumnName="Garitas" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Documents">
+            <EntityTypeMapping TypeName="VInspectionModel.Document">
+              <MappingFragment StoreEntitySet="Documents">
+                <ScalarProperty Name="IdDocumento" ColumnName="IdDocumento" />
+                <ScalarProperty Name="Placa" ColumnName="Placa" />
+                <ScalarProperty Name="FechaSOAT" ColumnName="FechaSOAT" />
+                <ScalarProperty Name="FechaRevTecnica" ColumnName="FechaRevTecnica" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="VInspectionModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cuenta" ColumnName="Cuenta" />
+                <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+                <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Buscador" ColumnName="Buscador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vehicles">
+            <EntityTypeMapping TypeName="VInspectionModel.Vehicle">
+              <MappingFragment StoreEntitySet="Vehicle">
+                <ScalarProperty Name="IdVehiculo" ColumnName="IdVehiculo" />
+                <ScalarProperty Name="Placa" ColumnName="Placa" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Encargado" ColumnName="Encargado" />
+                <ScalarProperty Name="KUMantto" ColumnName="KUMantto" />
+                <ScalarProperty Name="FUMantto" ColumnName="FUMantto" />
+                <ScalarProperty Name="Kilometraje" ColumnName="Kilometraje" />
+                <ScalarProperty Name="Central" ColumnName="Central" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Buscador" ColumnName="Buscador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
